@@ -28,6 +28,7 @@ import time
 import urllib.request, urllib.parse, urllib.error
 import codecs
 import backports.ssl as ssl
+#import ssl
 from enum import IntEnum
 
 from . import data
