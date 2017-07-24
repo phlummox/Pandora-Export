@@ -11,7 +11,6 @@ environment:
       PYTHON_VERSION: "3.3.x" # currently 3.3.5
       PYTHON_ARCH: "32"
 
-
 install:
   # If there is a newer build queued for the same PR, cancel this one.
   # The AppVeyor 'rollout builds' option is supposed to serve the same
