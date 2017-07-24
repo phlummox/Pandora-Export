@@ -1,7 +1,5 @@
 wheel
 pypiwin32
-enum34
 six
 pyOpenSSL
-backports.ssl
 pyinstaller
