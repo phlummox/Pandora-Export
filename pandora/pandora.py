@@ -27,7 +27,7 @@ import logging
 import time
 import urllib.request, urllib.parse, urllib.error
 import codecs
-import ssl
+import backports.ssl as ssl
 from enum import IntEnum
 
 from . import data
@@ -253,11 +253,12 @@ class Pandora:
         Wrapper around urllib.request.build_opener() that adds
         a custom ssl.SSLContext for use with internal-tuner.pandora.com
         """
-        ctx = ssl.create_default_context()
-        ctx.load_verify_locations(cadata=data.internal_cert)
+        #ctx = ssl.create_default_context()
+        #ctx.load_verify_locations(cadata=data.internal_cert)
+        ctx = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
         https = urllib.request.HTTPSHandler(context=ctx)
         return urllib.request.build_opener(https, *handlers)
-
+ 
     def set_url_opener(self, opener):
         self.opener = opener
 
