@@ -13,7 +13,7 @@ even without access to a Windows machine, using <https://www.appveyor.com/>,
 a free CI (continuous integration) service.
 
 - Fork this repo.
-- Go to [appveyor.com] [appveyor], and use the "sign in with GitHub"
+- Go to [appveyor.com] (http://appveyor.com), and use the "sign in with GitHub"
   feature to sign in.
 - Click "`+NEW PROJECT`"; you should be given a list of your GitHub projects
   - select the forked `Pandora-Export`.
@@ -22,8 +22,6 @@ a free CI (continuous integration) service.
 - At the end of the process, if all goes well, there should be a
   link titled "`ARTIFACTS`"; click on that, and a download of `export_gui.exe`
   should be available.
-
-[appveyor]: http://appveyor.com
 
 The "build script" for Appveyor is in `appveyor.yml`, and can be tweaked
 if you desire.
