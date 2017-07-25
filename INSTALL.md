@@ -12,8 +12,10 @@ It is possible to build self-contained binaries for Windows,
 even without access to a Windows machine, using <https://www.appveyor.com/>,
 a free CI (continuous integration) service.
 
+
+
 - Fork this repo.
-- Go to [appveyor.com] (http://appveyor.com), and use the "sign in with GitHub"
+- Go to [appveyor.com](http://appveyor.com), and use the "sign in with GitHub"
   feature to sign in.
 - Click "`+NEW PROJECT`"; you should be given a list of your GitHub projects
   - select the forked `Pandora-Export`.
